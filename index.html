@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AU Store - Discover products you'll love.">
+  <title>AU Store | Shop Smarter</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+  <div class="brand" onclick="goHome()">
+    <div class="logo">A<span>U</span></div>
+    <small>shop smarter</small>
+  </div>
+
+  <div class="search-box">
+    <input
+      id="searchInput"
+      type="search"
+      placeholder="Search for products, brands and more..."
+    >
+    <button onclick="searchProducts()">⌕</button>
+  </div>
+
+  <button class="header-btn" onclick="openWishlist()">
+    ♡ <span class="hide-mobile">Wishlist</span>
+  </button>
+
+  <button class="header-btn cart-btn" onclick="openCart()">
+    🛒 <span class="hide-mobile">Cart</span>
+    <b id="cartCount">0</b>
+  </button>
+
+</header>
+
+
+<nav class="categories">
+
+  <button onclick="filterCategory('All')">All</button>
+
+  <button onclick="filterCategory('Electronics')">
+    📱 Electronics
+  </button>
+
+  <button onclick="filterCategory('Fashion')">
+    👕 Fashion
+  </button>
+
+  <button onclick="filterCategory('Audio')">
+    🎧 Audio
+  </button>
+
+  <button onclick="filterCategory('Gaming')">
+    🎮 Gaming
+  </button>
+
+  <button onclick="filterCategory('Home')">
+    🏠 Home
+  </button>
+
+  <button onclick="filterCategory('Accessories')">
+    🎒 Accessories
+  </button>
+
+</nav>
+
+
+<main>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="eyebrow">
+      WELCOME TO AU
+    </div>
+
+    <h1>
+      Things you want.<br>
+      <span>Prices you'll love.</span>
+    </h1>
+
+    <p>
+      Explore electronics, fashion, gaming,
+      home essentials and more.
+    </p>
+
+    <button
+      class="primary-btn"
+      onclick="scrollToProducts()"
+    >
+      Explore products →
+    </button>
+
+  </div>
+
+
+  <div class="hero-object">
+
+    <div class="floating-card card-one">
+      🎧
+    </div>
+
+    <div class="floating-card card-two">
+      ⌚
+    </div>
+
+    <div class="hero-circle">
+      AU
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="trust">
+
+  <div>
+    ⚡
+    <b>Fast discovery</b>
+    <span>Find what you need quickly</span>
+  </div>
+
+  <div>
+    🔒
+    <b>Secure experience</b>
+    <span>Your data stays protected</span>
+  </div>
+
+  <div>
+    💎
+    <b>Curated products</b>
+    <span>Only the good stuff</span>
+  </div>
+
+</section>
+
+
+<section
+  class="products-section"
+  id="productsSection"
+>
+
+  <div class="section-top">
+
+    <div>
+
+      <p class="
